@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+	<div id="login">
+        <div>
+            <!-- <p>车辆数据云系统</p> -->
+            <canvas width="280" height="300"></canvas>
+        </div>
+        <div class="login-form">
+            <form action="">
+                <h3>登录</h3>
+                <div class="inputs">
+	                <div class="input-in"><input type="text" placeholder="请输入账号"></div>
+	                <div class="input-in"><input type="password" placeholder="请输入密码"></div>
+	                <div class="input-yz input-in"><input type="text" placeholder="验证码" class="yanzheng"><img src="img/yanzheng.png" alt="" width="60" height="25"></div>
+	                <div class="checkbox"><input type="checkbox"><span>记住密码</span></div>
+                </div>
+                <div class="btn"><button>确认登录</button></div>
+            </form>
+        </div>
+	</div>
+	<p class="footer">北京百联长通科技有限公司</p>
+<script>
+	 var canvas=document.querySelector("canvas");
+	 var ctx = canvas.getContext("2d");
+     ctx.beginPath();
+     ctx.moveTo(50,119);
+     ctx.lineTo(50,150);
+     ctx.strokeStyle="white";
+     ctx.stroke();
+
+     ctx.beginPath();
+     ctx.moveTo(110,120);
+     ctx.lineTo(50,120);
+     ctx.strokeStyle="white";
+     ctx.stroke();
+
+     ctx.beginPath();
+     ctx.moveTo(280,190);
+     ctx.lineTo(220,190);
+     ctx.strokeStyle="white";
+     ctx.stroke();
+
+     ctx.beginPath();
+     ctx.moveTo(279,160);
+     ctx.lineTo(279,190);
+     ctx.strokeStyle="white";
+     ctx.stroke();
+
+     ctx.fillStyle="white";
+     ctx.font="bold 24px MicroSoft YaHei";
+     ctx.fillText("车辆数据云系统",80,165);
+</script>
+</body>
+</html>
